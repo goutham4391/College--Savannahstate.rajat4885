@@ -1,0 +1,733 @@
+#nav-container{
+	 padding: 0;
+}
+ #news .wrappertileNews #tileNews a{
+	 color:#d43900;
+}
+ #news .wrappertileNews #tileNews a:hover{
+	 background-color:#d43900;
+	 color:#ffffff;
+}
+ #main-alert {
+	 background-color:#d9534f;
+	 color:#fff;
+	 font-weight:bold;
+	 text-align:center;
+	 line-height:2.25em;
+	 font-size:125%;
+}
+ @media screen and (max-width: 1044px){
+	 .bookshelf{
+		 display: none;
+	}
+}
+ .wavy{
+	 display: block;
+	 border: 0;
+	 height: 7px;
+	 margin: 30px 0;
+	 background-image: url(https://www.savannahstate.edu/images/horizontal-rule-wavy-line.png);
+}
+/*utility-nav begin------------*/
+ #utility-nav-container {
+	 width: 100%;
+	 background-color: #262626;
+	/*Dark Grey*/
+}
+ #utility-nav {
+	 clear: both;
+	 padding: 5px 0;
+	 float: none;
+	 display: inline-block;
+}
+ #utility-nav > li {
+	 background-color: transparent;
+	 padding: 0 30px;
+}
+ #utility-nav > li > ul {
+	 width: 960px;
+}
+ #utility-nav > li > a {
+	 padding: 0px;
+	 color: #fff;
+	/*White*/
+	 font-size: 0.875em;
+}
+ #utility-nav .open {
+	 background-color: #262626;
+}
+ #utility-nav .dropdown-menu li {
+	 padding: 0em;
+}
+ #utility-nav #prospective-students {
+	 padding-left: 0;
+}
+ #utility-nav #prosective-students > .dropdown-menu {
+	 margin-left: -210px;
+}
+ #utility-nav #current-students > .dropdown-menu {
+	 margin-left: -373px;
+	/*403px - 30px padding*/
+}
+ #utility-nav #alumni > .dropdown-menu {
+	 margin-left: -540px;
+	/*570px - 30px padding*/
+}
+ #utility-nav #donors > .dropdown-menu {
+	 margin-left: -645px;
+	/*675px - 30px padding*/
+}
+ #utility-nav .right-divider {
+	 border-right: dashed 1px #fff;
+}
+ #utility-nav .left-divider {
+	 border-left: dashed 1px #fff;
+}
+ .libraryDrop > li > a:hover{
+	 color: white;
+	 background-color: #337ab7;
+}
+ @media screen and (max-width: 767px){
+	 .libraryDrop > li > a {
+		 color: white;
+	}
+}
+/*utility-nav end------------*/
+/*From main index page--originally*/
+ .error {
+	 color: #ff0000;
+	 font-weight: bold;
+}
+ .navbar {
+	 margin-bottom: 0;
+	 border: none;
+}
+ .nav{
+	 margin: 0 auto;
+	 max-width: 960px;
+}
+ .nav > li > a {
+	 color: #fff;
+	 font-family: 'Roboto', sans-serif;
+	 font-weight: normal;
+	 font-size: 1.125em;
+	 text-transform: uppercase;
+}
+ .nav > li > a:hover, .nav > li > a:focus {
+	 color: #000;
+	 background-color: #fff;
+}
+ .tab-active {
+	 background-color: #fff;
+	 color: #000;
+}
+ .tab-active a {
+	 color: #000!important;
+}
+ .peak-thru {
+	 max-height: 200px;
+	 overflow-y: hidden;
+}
+ .peak-thru img {
+	 width: 100%;
+}
+ .peak-thru-tall {
+	 max-height: 300px;
+	 position: relative;
+}
+ .peak-thru-tall .footerBlock {
+	 background-color: #d43900;
+	 z-index: 99;
+	 position: absolute;
+	 width: 100%;
+	 top: 10%;
+	 text-align: center;
+	 padding: 10px 0;
+}
+ .peak-thru-tall .footerBlock .logo-125 {
+	 width: 70px;
+	 background-color: #fff;
+	 margin: 0 auto;
+}
+ .peak-thru-tall .footerBlock .logo-125 img {
+	 width: 70px;
+	 float: left;
+	 padding: 5px;
+}
+ .peak-thru-tall .footerBlock a {
+	 color: #fff;
+}
+ @media screen and (max-width: 576px){
+	 .peak-thru-tall .footerBlock{
+		 top: 0;
+	}
+	 .footerBlock{
+		 height: 142px;
+	}
+}
+ .peak-thru > img {
+	 width: 100%;
+}
+ .logoTitle {
+	 clear: both;
+	 margin: 15px 0;
+}
+ .logoTitle .logo {
+	 float: left;
+	 width: 80%;
+}
+ .logoTitle .logo img {
+	 width: 100%;
+}
+ .logoTitle .title {
+	 width: 180px;
+	 float: left;
+	 margin-top: 4px;
+	 margin-left: 10px;
+	/*margin-top: 7px;
+	 */
+	/*margin-left: 10px;
+	 */
+	/*font-family: 'Roboto Light', sans-serif;
+	 */
+	/*font-size: 1em;
+	 */
+	/*color: #1F529A;
+	 */
+	/*Blue*/
+}
+ .logoTitle .title img {
+	 width: 100%;
+}
+ #main{
+	 padding-left: 0;
+	 padding-right: 0;
+}
+ .main-content {
+	 padding-bottom: 15px;
+}
+ h1 {
+	 font-family: 'Roboto Light', sans-serif;
+	 font-size: 1.4em;
+	 color: #1F529A;
+	/*Blue*/
+}
+ h2 {
+	 font-family: 'Roboto', sans-serif;
+	 font-size: 1.3em;
+}
+ h3 {
+	 font-family: 'Roboto Light Condensed', sans-serif;
+	 font-size: 1.1em;
+	 color: #1F529A;
+	/*Blue*/
+}
+ .page-content h1 {
+	 text-transform: uppercase;
+}
+ .hamburger {
+	 background-color: #d43900;
+	/*Orange*/
+}
+ .hamburger .icon-bar {
+	 background-color: #FFF;
+	/*white*/
+}
+ .top-nav {
+	/*background-color: #d43900;
+	 */
+	/*Orange*/
+	 background-color: #262626;
+	 margin-top: 0;
+}
+ .top-nav > .navbar-nav {
+	 margin-top: 0;
+	 margin-bottom: 0;
+}
+ .top-nav > .navbar-nav > li {
+	 border-bottom: solid 1px #fff;
+}
+ .chair {
+	 font-size: .85em;
+	 margin-bottom: 5px;
+}
+ .chair-left {
+	 text-align: left;
+}
+ .chair-right {
+	 text-align: left;
+}
+ .callToAction {
+	 margin: 15px 0;
+	 border: solid 1px #E9E9E9;
+	/*Light Grey*/
+	 font-family: 'Roboto', sans-serif;
+	 background-color: #d43900;
+	/*Orange*/
+}
+ .callToAction .doubleArrows {
+	 float: left;
+	 color: #FFF;
+	/*White*/
+	 width: 15%;
+	 text-align: center;
+	 padding-top: .9em;
+}
+ .callToAction .doubleArrows .glyphicon-menu-right:nth-of-type(2) {
+	 margin-left: -8px;
+}
+ .callToAction .actionDetails {
+	 float: right;
+	 font-size: 1.5em;
+	/*24px/16px*/
+	 width: 85%;
+	 background-color: white;
+	 padding: .5em;
+	 color: #1F529A;
+	/*Blue*/
+}
+ .callToAction .actionDetails a {
+	 color: #1F529A;
+	/*Blue*/
+}
+ .callToAction .actionDetails a:hover {
+	 background-color: transparent;
+}
+ .suggest-story:before {
+	 content: "\e086";
+	 font-family: "Glyphicons Halflings";
+	 margin-right: 5px;
+	 position: relative;
+	 top: 3px;
+}
+ .suggest-story {
+	 text-align: left;
+	 font-size: .75em;
+	 color: #d43900;
+}
+ @media screen and (min-width:768px) {
+	 .navbar {
+		 margin-bottom: 0;
+	}
+	 .navbar-nav {
+		 margin: 0 auto;
+		 float: none;
+	}
+	 h1 {
+		 font-family: 'Roboto Light', sans-serif;
+		 font-size: 2.5em;
+		 color: #1F529A;
+		/*Blue*/
+	}
+	 h2 {
+		 font-size: 1.5em;
+	}
+	 h3 {
+		 font-size: 1.25em;
+	}
+	 h4 {
+		 font-size: 1.0em;
+		 font-weight: bold;
+	}
+	 .logoTitle {
+		 clear: both;
+		 padding-top: 15px;
+		 padding-bottom: 15px;
+		 max-width: 960px;
+		 margin: 0 auto;
+	}
+	 .logoTitle .logo {
+		 padding: 0 6px 6px 0;
+		 width: 500px;
+		 float: left;
+	}
+	 .logoTitle .logo img {
+		 width: 100%;
+	}
+	 .logoTitle .title {
+		 width: 400px;
+		/*float: left;
+		 */
+		/*margin-left: 30px;
+		 */
+		/*font-family: 'Roboto Light', sans-serif;
+		 */
+		/*font-size: 2.5em;
+		 */
+		/*color: #1F529A;
+		 */
+		/*Blue*/
+	}
+	 .logoTitle .title img {
+		 height: 70px;
+		 width: auto;
+	}
+	 .top-nav {
+		/*background-color: #d43900;
+		 */
+		/*Orange*/
+		 background-color: #262626;
+	}
+	 .top-nav > .navbar-nav > li {
+		 border-bottom: none;
+	}
+	 .chair-right {
+		 text-align: right;
+	}
+}
+ .page-content {
+	 max-width: 960px;
+	 margin: 0 auto;
+}
+ @media screen and (max-width: 1000px){
+	 .page-content{
+		 max-width: 95%;
+	}
+}
+ .lb-container {
+	 padding: 0 !important;
+}
+ #searchBox {
+	 margin-top: 45px !important;
+}
+ #passwd{
+	 float: right;
+	 position: relative;
+	 background-color: #34a;
+}
+ #passwd:active{
+	 box-shadow: 2px 2px gray inset;
+}
+ #passwd a{
+	 text-decoration: none;
+	 color: white;
+}
+ .social > .social-item {
+	 background-color: #1F529A;
+	/*Blue*/
+	 height: 40px;
+	 width: 40px;
+	 border-radius: 25px;
+	 float: left;
+	 margin-top: 10px;
+	 margin-right: 17px;
+	 margin-bottom: 5px;
+	 margin-left: 0;
+}
+ .social a span {
+	 position: absolute;
+	 left: -99999px;
+}
+ .social a {
+	 display: block;
+	 float: right;
+	 background-image: url("https://www.savannahstate.edu/images/sprites/library_social_sprite.png");
+	 background-position: top;
+	 background-repeat: no-repeat;
+	 position: relative;
+}
+ .social a.facebook-icon {
+	 width: 15px;
+	 height: 26px;
+	 background-position: -29px 0;
+	 margin: 8px 12px 0px 0px;
+}
+ .social a.twitter-icon {
+	 width: 29px;
+	 height: 26px;
+	 background-position: 0 0;
+	 margin: 8px 5px 0px 0px;
+}
+ .social a.youtube-icon {
+	 width: 27px;
+	 height: 26px;
+	 background-position: -97px 0px;
+	 margin: 7px 6px 0px 0px;
+}
+ .social a.instagram-icon {
+	 width: 25px;
+	 height: 26px;
+	 background-position: -70px 0px;
+	 margin: 7px 8px 0px 0px;
+}
+ #footer-upper {
+	 font-family: 'Roboto Light', sans-serif;
+	 font-size: 16px;
+	 color: #1F529A;
+}
+ #footer-upper a {
+	 text-decoration: none;
+	 color: #1F529A;
+}
+ .address{
+	 color: black;
+}
+/*Site Search*/
+ .cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2{
+	 -webkit-box-sizing: border-box;
+	 -moz-box-sizing: content-box;
+	 box-sizing: content-box;
+}
+ input.gsc-input {
+	 font-size: 14px!important;
+}
+/*News*/
+ #news{
+	 padding-left: 20px;
+}
+ #tileNews{
+	 list-style: none;
+	 padding-left: 0;
+	 font-size: 20px;
+}
+ #tileNews a:hover{
+	 text-decoration: none;
+	 color: #d43900;
+}
+/*home page*/
+ .callOut-bg-librarian {
+	 background-image: url(https://www.savannahstate.edu/images/callOuts/male-librarian-bg.jpg);
+	 background-repeat: no-repeat;
+	 background-color: #F0F0F0;
+}
+ .callOut-bg-stack-books {
+	 background-image: url(https://www.savannahstate.edu/images/callOuts/stack-of-books-bg.jpg);
+	 background-repeat: no-repeat;
+	 background-color: #F0F0F0;
+}
+ .callOut-bg-asa {
+	 background-image: url(https://www.savannahstate.edu/images/callOuts/asa-gordon-library-bg.jpg);
+	 background-repeat: no-repeat;
+	 background-color: #F0F0F0;
+}
+ .callOut-bg-books-pencils {
+	 background-image: url(https://www.savannahstate.edu/images/callOuts/books-pencils.jpg);
+	 background-repeat: no-repeat;
+	 background-color: #F0F0F0;
+}
+ .callOut-bg-computer {
+	 background-image: url(https://www.savannahstate.edu/images/callOuts/computer.jpg);
+	 background-repeat: no-repeat;
+	 background-color: #F0F0F0;
+}
+ .callOut-bg-printer {
+	 background-image: url(https://www.savannahstate.edu/images/callOuts/printer.jpg);
+	 background-repeat: no-repeat;
+	 background-color: #F0F0F0;
+}
+ a .callOut {
+	 color: #262626;
+}
+ .callOut {
+	 width: 100%;
+	 border:1px solid #E9E9E9;
+	 position: relative;
+	 height: 225px;
+	 clear: both;
+	 background-size: 100% auto;
+}
+ .callOut .callOutDetails {
+	 width: 90%;
+	 background-color: #fff;
+	 position: absolute;
+	 bottom: 0;
+	 padding: 0 5%;
+	 margin: 5%;
+	 border: 1px solid #E9E9E9;
+}
+ .callOut .callOutDetails h4 {
+	 color: #1F529A;
+	 line-height: 1em;
+}
+ #search {
+	 background-color: #fff;
+	 border: none;
+	 width: 100%;
+	 padding: 0;
+	 margin: 0;
+	 float: left;
+	 font-size: 75%;
+}
+ #searchBox {
+	 margin-right: 0;
+	 background-color: #F0F0F0;
+	 border: none;
+	 min-height: 11em;
+	 margin-top: 3em;
+	 padding: 10px 10px 10px 10px;
+	 font-weight: bold;
+	 font-family: Interstate, Verdana, Arial, Helvetica, sans-serif;
+}
+ #searchTabs {
+	 border: none;
+	 float: left;
+	 clear: both;
+	 width: 100%;
+	 margin-left: 0em;
+	 font-family: Interstate, Verdana, Arial, Helvetica, sans-serif;
+}
+ #searchTabs ul {
+	 margin: 0em;
+	 padding:12px 0px 0px 0px;
+	 list-style: none;
+}
+ #searchTabs li {
+	 float: left;
+	 margin: 0em;
+	 padding: 0 0 0 9px;
+	 background-image: none;
+	 background-repeat: no-repeat;
+	 background-position: left top;
+	 border-top: solid 1px #E9E9E9;
+	 border-right: solid 1px #E9E9E9;
+	 font-size: 1.5em;
+}
+ @media screen and (max-width: 506px){
+	 #searchTabs li{
+		 font-size: 1.0em;
+	}
+}
+ @media screen and (max-width: 399px){
+	 #searchTabs li{
+		 font-size: 0.7em;
+	}
+}
+ #searchTabs li:first-of-type {
+	 border-left: solid 1px #E9E9E9;
+}
+ #searchTabs span {
+	 float: left;
+	 display: block;
+	 padding: 5px 12px 5px 4px;
+	 text-decoration: none;
+	 font-weight: bold;
+	 color: #003366;
+	 background-image: none;
+	 background-repeat: no-repeat;
+	 background-position: right top;
+	 cursor: default;
+}
+ #searchTabs li:hover {
+	 background-image: none;
+	 color: #036 !important;
+	 background-position: 0% -113px;
+	 cursor: pointer;
+	 background-color: #1F529A;
+}
+ #searchTabs span:hover {
+	 background-image: none;
+	 color: #ffffff !important;
+	 background-position: 100% -113px;
+	 cursor: pointer;
+}
+ #searchTabs .currentSearchTab {
+	 background-image: none;
+	 background-position: 0% -113px;
+	 cursor: pointer;
+	 background-color: #1F529A;
+}
+ #searchTabs .currentSearchTab span {
+	 background-image: none;
+	 padding-bottom: 5px;
+	 background-position: 100% -113px;
+	 cursor: default;
+	 color: #ffffff;
+}
+ .currentSearchTab span:hover{
+	 text-decoration:none !important;
+	 cursor:default;
+}
+ #search h2 {
+	 margin: .2em 0em 0em .2em;
+}
+ .tileContainer {
+	 color: #fff;
+	/*White*/
+}
+ .tile {
+	 padding: 0px 10px 10px 0px;
+	 margin-bottom: 15px;
+}
+ .tile h2 {
+	 color: #000;
+}
+ .tile img {
+	 width: 100%;
+}
+ .tile ul {
+	 list-style: none;
+	 padding: 0;
+}
+ .tile ul li {
+	 border-bottom: none;
+	 padding-bottom: 10px;
+}
+ .orange-tile {
+	 background-color: #d43900;
+	/*Orange*/
+	 padding: 15px;
+	 text-align: center;
+}
+ .btn-standard, .btn-standard-double, .btn-standard-left, .btn-standard-left-double {
+	 border: solid 1px #E9E9E9;
+	/*Light Grey*/
+	 margin: 10px 0;
+	 text-align: center;
+	 padding: 5px 20px;
+	 display: inline-block;
+	 background-color: #fff;
+	/*White*/
+}
+ .btn-standard {
+	 background-image: url('https://www.savannahstate.edu/library/images/orange-arrow.png');
+	 background-repeat: no-repeat;
+	 background-position: 94% center;
+	 padding: 5px 30px 5px 20px;
+	 color: #d43900;
+	 cursor: pointer;
+}
+ .btn-standard:hover {
+	 background-image: url('https://www.savannahstate.edu/library/images/white-arrow.png');
+	 background-color: #d43900;
+	 color: #fff;
+	 text-decoration: none;
+}
+ .btn-orange {
+	 border: solid 1px #E9E9E9;
+	/*Light Grey*/
+	 background-color: #d43900;
+	/*Orange*/
+	 background-image: url('https://www.savannahstate.edu/library/images/white-arrow.png');
+}
+ .btn-orange:hover {
+	 color: #d43900 !important;
+	/*Orange*/
+	 background-color: #fff;
+	/*White*/
+	 background-image: url('https://www.savannahstate.edu/library/images/orange-arrow.png');
+}
+ .nav > li {
+	 margin-bottom: 0;
+}
+ .glyphicon-folder-open {
+	 color: #d43900;
+}
+ .glyphicon-folder-open:before {
+	 content: "\e118";
+}
+ .posttime {
+	 display: none;
+}
+ .searchBoxContent hr {
+	 border-top-color:#262626;
+}
+ .carousel-caption{
+	 background-color: black;
+	 opacity: 0.7;
+	 padding: 0;
+	 margin-bottom: 0;
+}
+ .carousel-caption h2{
+	 margin: 2px;
+}
+ 

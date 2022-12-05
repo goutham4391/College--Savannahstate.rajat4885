@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.savannahstate.edu/map/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Nov 2022 10:50:00 GMT -->
+<head>
+	<title>Savannah State University Map</title>
+	<meta name="description" content="Savannah State University Interactive Map" />
+	<meta name="keywords" content="SSU,Map,Interactive,Locations,Places" />
+    <meta name="author" content="Denzel Carter">
+	<link rel="stylesheet" href="https://www.savannahstate.edu/map/style.css" type="text/css" media="all" /> 
+
+	<!-- ==============================================
+	REQUIRED FOR MAPIT. -->
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/excite-bike/jquery-ui.css" id="mapitcss" media="screen" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://www.savannahstate.edu/map/source/jquery.mapit.css" type="text/css" media="all" /> 
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="https://www.savannahstate.edu/map/source/jquery.mapit.min.js" id="Script1"></script>
+	<script type="text/javascript" src="https://www.savannahstate.edu/map/source/jquery.mapit.js" id="mapit-source"></script>
+	<script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/src/markerclusterer_compiled.js"></script>
+	<!-- ============================================== -->
+	
+	<script type="text/javascript" src="https://www.savannahstate.edu/map/script.js"></script>
+
+	<style type="text/css">
+		/*OVERVIEW: To overide the base mapit.css  make 
+		sure your style block is below the mapit.css link*/
+		 
+		/*MAIN CONTENT: Set plugin size and hide info bar */
+		.mapit-content {height:650px !important}
+		.mapit-map-content {width:75% !important; height:650px !important}
+	
+		/*NAVIGATION BAR: Change header and font size */
+		.mapit-navigation {width:25% !important; height:650px !important}
+		.mapit-accordion-link {font-size:14px !important;}
+		.mapit-accordion-link-sublink {font-size:10px !important;}
+		.mapit-accordion .ui-accordion-header a {font-size:14px !important;}
+		
+		.mapit-embed .mapit-embed-bubble-tabs-panel
+		{
+			height:150px;
+			min-width:250px !important;
+			max-width: 550px !important;
+		}
+	</style>
+</head>
+<body>
+	<div class="content" style="width:100%; padding-left:1px;">
+	
+		<div class="title">
+			<table>
+				<tr>
+					<td style="width:100%">
+						<h2>Savannah State University Map</h2>
+					</td>
+					<td class="title-links">
+						<a href="http://www.savannahstate.edu/">Home</a> 
+					</td>
+				</tr>
+			</table>
+		</div> 
+
+		
+		<!-- ==============================================
+		REQUIRED FOR MAPIT. -->
+		<div id="map"></div><br /><br />
+		<a name="downloadMap"></a>
+		<h2>Downloadable Campus Map</h2>
+	<a href="http://www.savannahstate.edu/images/SSU-campus-map-black&amp;white.jpg" target="_blank">Click here to download a copy of the campus map seen below.
+		<img style="border:solid 1px;" width="100%" src="https://www.savannahstate.edu/images/SSU-campus-map-black&amp;white.jpg" alt="A black and white overhead map of the buildings on Savannah State University's campus." /></a>
+		
+		<script type="text/javascript">
+		    var maps = null;
+
+		    jQuery(document).ready(function ()
+		    {
+		        $("#slider-range-max").slider({
+		            range: "max", min: 0, max: 400, step: 25, value: 0,
+		            slide: function (event, ui) { $("#amount").val(ui.value); },
+		            stop: function (event, ui) { applyClustering(ui.value); }
+		        });
+
+		        $("#amount").val($("#slider-range-max").slider("value"));
+
+		        drawMap();
+            });
+
+		    function drawMap(allowClustering, clusterOpts)
+		    {
+		        //This call is all that is required for a basic MapIt install
+		        maps = jQuery("#map").mapit(
+				{
+				    xmlConfig: "xml.aspx",
+				    cacheXml: false,
+				    markerClustererOptions: (clusterOpts || null),
+				    allowClustering: (allowClustering || false)
+				});
+		    }
+
+            function applyTheme(theme)
+            {
+                if (maps)
+                {
+                    maps.each(function ()
+                    {
+                        this.mapit.applyTheme(theme);
+                        return;
+                    });
+                }
+            }
+
+            function applyClustering(clusterSize)
+            {
+                if (maps)
+                {
+                    maps.each(function ()
+                    {
+                        var clusterOpts = { gridSize: (clusterSize || 0) };
+
+                        if (clusterSize == 0)
+                        {
+                            if (this.mapit.get_options().allowClustering == true)
+                            {
+                                // redraw the map with clustering disabled
+                                drawMap(false);
+                            }
+                        }
+                        else if (this.mapit.get_options().allowClustering == false)
+                        {
+                            // redraw the map with clustering enabled
+                            drawMap(true, clusterOpts);
+                        }
+                        else
+                        {
+                            // clustering already enabled so just redraw the clusters
+                            this.mapit.applyClusterOptions(clusterOpts);
+                        }
+
+                        return;
+                    });
+                }
+            }
+		</script>
+		<!-- ============================================== -->
+		
+	</div>
+	
+</body>
+
+<!-- Mirrored from www.savannahstate.edu/map/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Nov 2022 10:50:00 GMT -->
+</html>

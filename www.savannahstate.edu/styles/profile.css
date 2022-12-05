@@ -1,0 +1,121 @@
+﻿table .profile {
+            padding:0;
+            border:solid 1px #E9E9E9; /*Light Grey*/
+            margin-top:0;
+}
+
+        .profile {
+            width:100%;
+            clear:both;
+            margin-top:15px;
+            margin-bottom:15px;
+
+        }
+
+
+        
+
+            .profile .photo {
+                width:270px;
+                float:left;
+                padding:0;
+                margin-right:15px;
+                text-align:center;
+                background-color:#A7A9AC; /*Grey*/
+            }
+            table .profile .photo {
+                margin-right:10px;
+            }
+            .profile .photo img{
+                max-height:180px;
+            }
+
+            .profile .details {
+                float:left;
+                word-wrap:break-word;
+                width:673px;/*960-270px(photo)-15px(padding)-2px(border) */
+                text-align:left;
+                padding-top:10px;
+            }
+
+.tileContainer .profile .photo {
+                width:100%;
+                clear:both;
+            }
+    .tileContainer .profile .photo img {
+        width:100%;
+        max-height:none;
+        height:auto;
+    }
+
+
+.tileContainer .profile .details {
+                width:100%;
+                clear:both;
+                color:#262626; /*Grey (Body, Utility Nav, Footer)*/
+            }
+
+.content-inner .profile .details {
+    width:420px;/*705-270px(photo)-15px padding*/
+}
+
+
+
+            .profile .details h3{
+                margin-top:0;
+                padding-top:0;
+            }
+
+.profileGridView {
+    width:100%;
+    background-color:transparent;
+    border:none;
+    padding:0;
+}
+
+.profileGridView tbody tr td {
+        border:none;
+        padding:0;
+    }
+
+
+@media screen and (max-width:649px) {
+
+  
+    .profile .photo {
+        width: 100%;
+        padding-right: 0;
+    }
+    .profile .photo img{
+        width:100%;
+        height:auto;
+        max-height:none;
+    }
+
+    .profile .details {
+        width: 100% !important;
+        padding:15px;
+    }
+}
+ @media screen and (min-width: 960px){
+        .profile .photo {
+            width:160px !important;
+            overflow-x:hidden !important;
+            position:relative;
+            text-align:center;
+        }
+
+        .profile .photo img {
+            max-height:none !important;
+            height:240px;
+            
+            position:relative;
+            left:-50%;
+        }
+
+            .profilePhotoWrapper {
+                display: inline-block;
+                position: relative;
+                right: -50%;
+            }
+}
